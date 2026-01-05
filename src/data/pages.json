@@ -1,0 +1,158 @@
+{
+  "services": [
+    {
+      "title": "Software Development",
+      "slug": "software-development",
+      "path": "/services/software-development",
+      "priority": "High",
+      "badge": "Popular"
+    },
+    {
+      "title": "Mobile App Development",
+      "slug": "mobile-app-development",
+      "path": "/services/mobile-app-development",
+      "priority": "High"
+    },
+    {
+      "title": "SaaS App Development",
+      "slug": "saas-development",
+      "path": "/services/saas-development",
+      "priority": "Medium"
+    },
+    {
+      "title": "WordPress Development",
+      "slug": "wordpress-development",
+      "path": "/services/wordpress-development",
+      "priority": "Medium"
+    },
+    {
+      "title": "Ecommerce Website Development",
+      "slug": "ecommerce-development",
+      "path": "/services/ecommerce-development",
+      "priority": "High",
+      "badge": "Growth"
+    },
+    {
+      "title": "Shopify Development",
+      "slug": "shopify-development",
+      "path": "/services/shopify-development",
+      "priority": "Medium"
+    },
+    {
+      "title": "Design to Code",
+      "slug": "design-to-code",
+      "path": "/services/design-to-code",
+      "priority": "Low"
+    },
+    {
+      "title": "IT Strategy & Consulting",
+      "slug": "it-consulting",
+      "path": "/services/it-consulting",
+      "priority": "High",
+      "badge": "Premium"
+    },
+    {
+      "title": "AI Development",
+      "slug": "ai-development",
+      "path": "/services/ai-development",
+      "priority": "Very High",
+      "badge": "Hot"
+    },
+    {
+      "title": "Dedicated Development Team",
+      "slug": "dedicated-teams",
+      "path": "/services/dedicated-teams",
+      "priority": "High",
+      "badge": "Flexible"
+    },
+    {
+      "title": "QA & Testing",
+      "slug": "qa-testing",
+      "path": "/services/qa-testing",
+      "priority": "Medium"
+    },
+    {
+      "title": "Technical Support",
+      "slug": "technical-support",
+      "path": "/services/technical-support",
+      "priority": "Medium"
+    }
+  ],
+  "expertise": [
+    {
+      "title": "Digital Transformation",
+      "slug": "digital-transformation",
+      "path": "/expertise/digital-transformation"
+    },
+    {
+      "title": "Internet of Things",
+      "slug": "internet-of-things",
+      "path": "/expertise/internet-of-things"
+    },
+    {
+      "title": "UI/UX Design",
+      "slug": "ui-ux-design",
+      "path": "/expertise/ui-ux-design"
+    },
+    {
+      "title": "API Integration",
+      "slug": "api-integration",
+      "path": "/expertise/api-integration"
+    }
+  ],
+  "technologies": [
+    {
+      "title": "Java Development",
+      "slug": "java-development",
+      "path": "/technologies/java-development"
+    },
+    {
+      "title": "Python Development",
+      "slug": "python-development",
+      "path": "/technologies/python-development"
+    },
+    {
+      "title": "PHP Development",
+      "slug": "php-development",
+      "path": "/technologies/php-development"
+    },
+    {
+      "title": "JavaScript Development",
+      "slug": "javascript-development",
+      "path": "/technologies/javascript-development"
+    },
+    {
+      "title": "Android Development",
+      "slug": "android-development",
+      "path": "/technologies/android-development"
+    },
+    {
+      "title": "iOS Development",
+      "slug": "ios-development",
+      "path": "/technologies/ios-development"
+    }
+  ],
+  "company": [
+    {
+      "title": "About Us",
+      "slug": "about",
+      "path": "/company/about"
+    },
+    {
+      "title": "How We Work",
+      "slug": "how-we-work",
+      "path": "/company/how-we-work"
+    },
+    {
+      "title": "Careers",
+      "slug": "careers",
+      "path": "/company/careers"
+    },
+    {
+      "title": "Contact Us",
+      "slug": "contact",
+      "path": "/company/contact"
+    }
+  ]
+}
+

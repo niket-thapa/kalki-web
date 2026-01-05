@@ -1,0 +1,116 @@
+{
+  "mainNav": [
+    {
+      "label": "Services",
+      "href": "#",
+      "type": "megamenu",
+      "children": [
+        {
+          "category": "Development and Integration Services",
+          "items": [
+            { "label": "Custom Software Development", "href": "/services/software-development", "badge": "Popular" },
+            { "label": "Mobile App Development", "href": "/services/mobile-app-development" },
+            { "label": "SaaS App Development", "href": "/services/saas-development" },
+            { "label": "API Integration", "href": "/expertise/api-integration" }
+          ]
+        },
+        {
+          "category": "Web & Ecommerce",
+          "items": [
+            { "label": "WordPress/WooCommerce Development", "href": "/services/wordpress-development" },
+            { "label": "Custom Ecommerce Solution", "href": "/services/ecommerce-development", "badge": "Growth" },
+            { "label": "Shopify Development", "href": "/services/shopify-development" },
+            { "label": "Magento Commerce", "href": "/services/magento-commerce" },
+            { "label": "Headless Development", "href": "/services/headless-development" }
+          ]
+        },
+        {
+          "category": "Strategic Services",
+          "items": [
+            { "label": "IT Consulting", "href": "/services/it-consulting", "badge": "Premium" },
+            { "label": "AI Development", "href": "/services/ai-development", "badge": "Hot" },
+            { "label": "Digital Transformation", "href": "/expertise/digital-transformation" },
+            { "label": "Internet of Things", "href": "/expertise/internet-of-things" }
+          ]
+        },
+        {
+          "category": "Design & Professional Services",
+          "items": [
+            { "label": "UI/UX Design", "href": "/expertise/ui-ux-design" },
+            { "label": "Design to Code", "href": "/services/design-to-code" },
+            { "label": "Dedicated Teams", "href": "/services/dedicated-teams", "badge": "Flexible" },
+            { "label": "QA & Testing", "href": "/services/qa-testing" },
+            { "label": "Technical Support", "href": "/services/technical-support" }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Technologies",
+      "href": "#",
+      "type": "dropdown",
+      "children": [
+        { "label": "Java", "href": "/technologies/java", "description": "Spring Boot, Spring Framework, Java EE, Hibernate, Maven, Gradle" },
+        { "label": "Python", "href": "/technologies/python", "description": "Django, Flask, FastAPI, Pandas, NumPy, TensorFlow, PyTorch" },
+        { "label": "JavaScript", "href": "/technologies/javascript", "description": "React, Next.js, Vue.js, Angular, Node.js, Express, MERN Stack, TypeScript" },
+        { "label": "PHP", "href": "/technologies/php", "description": "Laravel, Symfony, CodeIgniter, WordPress, WooCommerce" }
+      ]
+    },
+    {
+      "label": "Case Studies",
+      "href": "/case-studies",
+      "type": "link"
+    },
+    {
+      "label": "Company",
+      "href": "#",
+      "type": "dropdown",
+      "children": [
+        { "label": "About Us", "href": "/company/about" },
+        { "label": "How We Work", "href": "/company/how-we-work" },
+        { "label": "Careers", "href": "/company/careers" },
+        { "label": "Contact", "href": "/company/contact" }
+      ]
+    },
+    {
+      "label": "Blog",
+      "href": "/blog",
+      "type": "link"
+    }
+  ],
+  "footerLinks": {
+    "services": [
+      { "label": "Custom Software Development", "href": "/services/software-development" },
+      { "label": "Mobile App Development", "href": "/services/mobile-app-development" },
+      { "label": "SaaS App Development", "href": "/services/saas-development" },
+      { "label": "WordPress/WooCommerce Development", "href": "/services/wordpress-development" },
+      { "label": "Custom Ecommerce Solution", "href": "/services/ecommerce-development" },
+      { "label": "Magento Commerce", "href": "/services/magento-commerce" },
+      { "label": "Shopify Development", "href": "/services/shopify-development" },
+      { "label": "Headless Development", "href": "/services/headless-development" },
+      { "label": "AI Development", "href": "/services/ai-development" },
+      { "label": "IT Consulting", "href": "/services/it-consulting" },
+      { "label": "Digital Transformation", "href": "/expertise/digital-transformation" },
+      { "label": "UI/UX Design", "href": "/expertise/ui-ux-design" },
+      { "label": "API Integration", "href": "/expertise/api-integration" },
+      { "label": "Dedicated Teams", "href": "/services/dedicated-teams" },
+      { "label": "QA & Testing", "href": "/services/qa-testing" },
+      { "label": "Technical Support", "href": "/services/technical-support" }
+    ],
+    "technologies": [
+      { "label": "Java", "href": "/technologies/java" },
+      { "label": "Python", "href": "/technologies/python" },
+      { "label": "JavaScript", "href": "/technologies/javascript" },
+      { "label": "PHP", "href": "/technologies/php" }
+    ],
+    "company": [
+      { "label": "About Us", "href": "/company/about" },
+      { "label": "How We Work", "href": "/company/how-we-work" },
+      { "label": "Case Studies", "href": "/case-studies" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Careers", "href": "/company/careers" },
+      { "label": "Contact", "href": "/company/contact" }
+    ]
+  }
+}
+

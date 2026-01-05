@@ -1,0 +1,323 @@
+/**
+ * ═══════════════════════════════════════════════════════════════════════════
+ * KALKI AUTOMATION - BASE CSS STYLES
+ * CSS Variables, Global Styles, and Utility Classes
+ * Version: 1.0.0
+ * ═══════════════════════════════════════════════════════════════════════════
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   These mirror the Tailwind config for use in custom CSS
+═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ─────────────────────────────────────────────────────────────────────────
+     BRAND COLORS
+     WCAG AA compliant contrast ratios
+  ───────────────────────────────────────────────────────────────────────── */
+  --color-brand-primary: #5A4AD0;
+  --color-brand-primary-hover: #4B3BC1;
+  --color-brand-primary-active: #3D2DB2;
+  --color-brand-secondary: #2F2A6B;
+  --color-brand-secondary-soft: #E5E7FF;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     ACCENT COLORS
+  ───────────────────────────────────────────────────────────────────────── */
+  --color-accent-blue: #4DC3FF;
+  --color-accent-pink: #E07CFF;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     FEEDBACK COLORS
+  ───────────────────────────────────────────────────────────────────────── */
+  --color-feedback-success: #2ECC71;
+  --color-feedback-warning: #F4B740;
+  --color-feedback-error: #E5533D;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SURFACE COLORS - Light Mode
+  ───────────────────────────────────────────────────────────────────────── */
+  --color-background: #F7F8FF;
+  --color-surface-primary: #FFFFFF;
+  --color-surface-alt: #F1F3FF;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     BORDER COLORS
+  ───────────────────────────────────────────────────────────────────────── */
+  --color-border: #E2E5F5;
+  --color-divider: #D7DAF0;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     TEXT COLORS
+     WCAG AA compliant: 4.5:1 for normal text, 3:1 for large text
+  ───────────────────────────────────────────────────────────────────────── */
+  --color-text-heading: #16163F;
+  --color-text-body: #2A2A4A;
+  --color-text-muted: #4A4A6B;
+  --color-text-link: #5A4AD0;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     GRADIENTS
+  ───────────────────────────────────────────────────────────────────────── */
+  --gradient-hero: linear-gradient(135deg, #6A5AE0 0%, #8F84FF 50%, #4DC3FF 100%);
+  --gradient-subtle: linear-gradient(180deg, #F7F8FF 0%, #FFFFFF 100%);
+  --gradient-text: linear-gradient(135deg, #6A5AE0 0%, #4DC3FF 100%);
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SHADOWS
+  ───────────────────────────────────────────────────────────────────────── */
+  --shadow-sm: 0 1px 2px 0 rgba(22, 22, 63, 0.04);
+  --shadow-default: 0 2px 8px 0 rgba(22, 22, 63, 0.06);
+  --shadow-md: 0 4px 16px 0 rgba(22, 22, 63, 0.08);
+  --shadow-lg: 0 8px 32px 0 rgba(22, 22, 63, 0.10);
+  --shadow-xl: 0 16px 48px 0 rgba(22, 22, 63, 0.12);
+  --shadow-focus: 0 0 0 3px rgba(106, 90, 224, 0.25);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DARK MODE OVERRIDES
+═══════════════════════════════════════════════════════════════════════════ */
+
+.dark {
+  /* Surface Colors */
+  --color-background: #0E1028;
+  --color-surface-primary: #15183D;
+  --color-surface-alt: #1C2052;
+
+  /* Border Colors */
+  --color-border: #2D327A;
+  --color-divider: #2D327A;
+
+  /* Brand Primary - improved contrast */
+  --color-brand-primary: #8B7FFF;
+
+  /* Text Colors - WCAG AA compliant */
+  --color-text-heading: #FFFFFF;
+  --color-text-body: #E0E3FF;
+  --color-text-muted: #B8BCF0;
+
+  /* Accent Colors */
+  --color-accent-blue: #63D2FF;
+  --color-accent-pink: #F08CFF;
+
+  /* Gradient */
+  --gradient-hero: linear-gradient(135deg, #7A6FF0 0%, #4E5BFF 100%);
+  --gradient-text: linear-gradient(135deg, #7A6FF0 0%, #63D2FF 100%);
+
+  /* Shadows (darker for dark mode) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow-default: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px 0 rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BASE STYLES
+═══════════════════════════════════════════════════════════════════════════ */
+
+html {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+
+/* Heading Typography */
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  color: var(--color-text-heading);
+}
+
+/* Links */
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+a:hover {
+  color: var(--color-brand-primary-hover);
+}
+
+/* Focus States */
+*:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: 6px;
+}
+
+/* Smooth Transitions for Theme Toggle */
+*,
+*::before,
+*::after {
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-alt);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   UTILITY CLASSES
+═══════════════════════════════════════════════════════════════════════════ */
+
+/* Gradient Text */
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mega Menu Animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Submenu Container Animations - Slide Down */
+.submenu-container {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out, max-height 0.5s ease-out;
+  will-change: opacity, transform, max-height;
+}
+
+.submenu-container.submenu-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenu-container.submenu-closing {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Submenu Item Animations - Fade in from left with staggered delays */
+.submenu-item {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  will-change: opacity, transform;
+}
+
+/* When container is open, items fade in from left */
+.submenu-container.submenu-open .submenu-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* When container is closing, items fade out to left simultaneously */
+.submenu-container.submenu-closing .submenu-item {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition-delay: 0s !important; /* Remove staggered delays on close for simultaneous fade out */
+  transition-duration: 0.3s; /* Slightly faster on close */
+}
+
+/* Staggered animation delays are applied via inline styles */
+
+/* Menu Item Fade In From Left */
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Menu Item Fade Out To Left */
+@keyframes fadeOutToLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+/* Smooth slide transition for menu switching - X-axis only */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade out animation for previous menu */
+@keyframes fadeOutSlide {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+}
+
+/* ScrollTrigger Pin Spacer - Full Width */
+.pin-spacer {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
